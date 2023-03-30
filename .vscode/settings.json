@@ -1,0 +1,4 @@
+{
+    "git-graph.enhancedAccessibility": true,
+    "git-graph.repository.fetchAndPruneTags": true
+}
