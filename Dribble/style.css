@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #F9F9F9;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.quote-container {
+	background-color: #FFFFFF;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.quote {
+	font-size: 36px;
+	font-weight: 500;
+	color: #000000;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.author {
+	font-size: 24px;
+	font-weight: 400;
+	color: #BDBDBD;
+	text-align: right;
+}

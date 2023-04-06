@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="\favicon.ico" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Photo Gallery</h1>
+    <h2>Please indicate the number of photo to view</h2>
+
+    <input type="number" class="input" id="input" value="2" min="1" max="10" />
+    
+    <small class="errorMessage" id="errorMessage">Error Message</small>
+    
+    <button class="btn" id="btn">GET PHOTOS</button>
+    
+    <div class="gallery" id="gallery">
+      <img
+        src="https://images.unsplash.com/photo-1675453987062-ba156180d5a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        alt="image" />
+      <img
+        src="https://images.unsplash.com/photo-1671543541931-d46c686bdaa1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        alt="image" />
+    </div>
+    
+  </div>
+  <script src="scriptv3.js"></script>
+</body>
+
+</html>

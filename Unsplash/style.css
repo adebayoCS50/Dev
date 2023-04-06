@@ -1,0 +1,74 @@
+
+body{
+  margin: 0;
+  font-family:'Bradley Hand ITC', sans-serif;
+  background:linear-gradient(to bottom,rgb(170, 167, 167),lightblue);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container{
+  background-color:aliceblue;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7.5px;
+
+}
+
+h2{
+  font-weight: 100px;
+}
+
+.input{
+  padding: 20px 10px;
+  font-size: 18x;
+  background-color: white;
+  text-align: center;
+  border-radius: 4.5px;
+  width:100px;
+}
+
+.errorMessage{
+  color: red;
+  font-weight: 600;
+  margin: 10px;
+  display: none;
+}
+.gallery img {
+  width: 350px;
+  height: 350px;
+  border-radius: 2.5%;
+  margin: 10px
+}
+
+.gallery{
+  display: none;
+}
+
+.btn{
+  width: 250px;
+  height: 45px;
+  margin: 20px 0;
+  font-size:20px;
+  border-radius: 7px;
+  background-color: rgb(113, 113, 224);
+  border-color: aliceblue;
+  color: aliceblue;
+}
+
+.btn:hover{
+  background-color: rgba(27, 12, 158, 0.849);
+  cursor: pointer;
+  transition: background-color 1500ms ease-in-out;
+}
+
