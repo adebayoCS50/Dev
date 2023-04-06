@@ -1,32 +1,38 @@
-const hourElem = document.getElementById("hour");
-const minuteElem = document.getElementById("minutes");
-const secondElem = document.getElementById("seconds");
+// Get the elements that correspond to the clock display
+const hourElem = document.getElementById("hr");
+const minuteElem = document.getElementById("min");
+const secondElem = document.getElementById("second");
 const ampmElem = document.getElementById("ampm");
 
+// Updates the clock display every second.
 function updateClock() {
-  let hr = new Date().getHours();
-  let min = new Date().getMinutes();
-  let sec = new Date().getSeconds();
+  // Get the current time
+  const now = new Date();
+  let hr = now.getHours();
+  let min = now.getMinutes();
+  let sec = now.getSeconds();
   let ampm = "AM";
 
-  hourElem.innerText = hr;
-  hr = hr < 10 ? "0" + hr : hr; //format the hour.
-
-  minuteElem.innerText = min;
-  min = min < 10 ? "0" + min : min; //format the hour.
-
-  secondElem.innerText = sec;
-  sec = sec < 10 ? "0" + sec : sec; //format the hour.
-
-  ampmElem.innerText = ampm;
-  if (hr > 12) {
-    hr = h - 12;
+  // Determine whether it's AM or PM and update the ampm and hr variables
+  if (hr >= 12) {
     ampm = "PM";
+    hr -= 12;
   }
 
-  setTimeout(() => {
-    updateClock();
-  }, 1000);
+  // Format the time values
+  hr = hr < 10 ? "0" + hr : hr;
+  min = min < 10 ? "0" + min : min;
+  sec = sec < 10 ? "0" + sec : sec;
+
+  // Update the clock display
+  hourElem.innerText = hr;
+  minuteElem.innerText = min;
+  secondElem.innerText = sec;
+  ampmElem.innerText = ampm;
+
+  // Schedule the next update in one second
+  setTimeout(updateClock, 1000);
 }
 
+// Start the clock
 updateClock();
